@@ -1,0 +1,440 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "hi there",
+        "hello there",
+        "hey there",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "howdy",
+        "greetings",
+        "yo",
+        "hiya",
+        "what's up",
+        "sup"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What would you like to talk about?",
+        "Hey! Nice to see you. Ask me anything."
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "how are you",
+        "how are you doing",
+        "how do you do",
+        "how is it going",
+        "how's it going",
+        "how are things",
+        "are you ok",
+        "are you well",
+        "how have you been"
+      ],
+      "responses": [
+        "I'm just a bunch of code, but I'm doing great, thanks for asking! How about you?",
+        "Running smoothly, no bugs so far. How are you?"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "what's your name",
+        "who are you",
+        "tell me your name",
+        "what should I call you",
+        "your name",
+        "introduce yourself",
+        "what are you called",
+        "name"
+      ],
+      "responses": [
+        "I'm a simple NLP chatbot built with Python, NLTK, TF-IDF and Flask.",
+        "You can call me Chatbot. I recognise intents using TF-IDF and cosine similarity."
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "who made you",
+        "who created you",
+        "who built you",
+        "who is your creator",
+        "who programmed you",
+        "who developed you",
+        "who is your developer",
+        "who wrote you",
+        "creator"
+      ],
+      "responses": [
+        "I was built as a small Python project using Flask, NLTK and scikit-learn.",
+        "A developer wrote me in Python. My brain is just TF-IDF vectors and cosine similarity!"
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "what can you do",
+        "help",
+        "help me",
+        "what do you know",
+        "what can I ask you",
+        "how can you help me",
+        "what are your features",
+        "what are your abilities",
+        "can you help me",
+        "what topics do you know"
+      ],
+      "responses": [
+        "I can chat, tell jokes, give you the time and date, and explain a few topics like NLP, NLTK, TF-IDF, Flask, Python and machine learning. Try asking me about one!",
+        "Try: \"tell me a joke\", \"what time is it\", \"what is NLP\", or \"what is TF-IDF\"."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what time is it",
+        "what is the time",
+        "what's the time",
+        "tell me the time",
+        "current time",
+        "time now",
+        "do you know the time",
+        "what time is it now",
+        "got the time",
+        "time"
+      ],
+      "responses": [
+        "It's {time} right now.",
+        "The current time is {time}."
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "what is the date",
+        "what's the date",
+        "what day is it",
+        "what is today's date",
+        "today's date",
+        "tell me the date",
+        "what is today",
+        "current date",
+        "what day is today",
+        "which day is it",
+        "date"
+      ],
+      "responses": [
+        "Today is {date}.",
+        "It's {date}."
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke",
+        "joke",
+        "make me laugh",
+        "say something funny",
+        "do you know any jokes",
+        "tell a joke",
+        "I want to hear a joke",
+        "give me a joke",
+        "another joke",
+        "funny",
+        "jokes"
+      ],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs!",
+        "Why did the NLP model go to therapy? It had too many unresolved dependencies.",
+        "I told my computer I needed a break. Now it won't stop sending me Kit-Kat ads.",
+        "There are 10 kinds of people: those who understand binary and those who don't."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot",
+        "thank you so much",
+        "thx",
+        "many thanks",
+        "appreciate it",
+        "cheers",
+        "that was great",
+        "great thanks"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "see you later",
+        "see you soon",
+        "talk to you later",
+        "I have to go",
+        "good night",
+        "farewell",
+        "catch you later",
+        "quit",
+        "exit"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "See you later!",
+        "Bye! Come back any time."
+      ]
+    },
+    {
+      "tag": "nlp",
+      "patterns": [
+        "what is nlp",
+        "explain nlp",
+        "tell me about nlp",
+        "what is natural language processing",
+        "define natural language processing",
+        "nlp meaning",
+        "what does nlp stand for",
+        "natural language processing",
+        "nlp"
+      ],
+      "responses": [
+        "NLP (Natural Language Processing) is a field of AI that helps computers read, understand and generate human language. Chatbots, translators and search engines all use it."
+      ]
+    },
+    {
+      "tag": "nltk",
+      "patterns": [
+        "what is nltk",
+        "explain nltk",
+        "tell me about nltk",
+        "what is the natural language toolkit",
+        "nltk library",
+        "what does nltk do",
+        "nltk meaning",
+        "nltk",
+        "natural language toolkit"
+      ],
+      "responses": [
+        "NLTK is the Natural Language Toolkit, a popular Python library for text processing: tokenizing, stemming, tagging, parsing and more. This bot uses its tokenizer and Porter stemmer."
+      ]
+    },
+    {
+      "tag": "tfidf",
+      "patterns": [
+        "what is tf idf",
+        "what is tfidf",
+        "explain tf idf",
+        "explain tfidf",
+        "tell me about tf idf",
+        "tf idf meaning",
+        "how does tf idf work",
+        "what does tf idf mean",
+        "term frequency inverse document frequency",
+        "tf idf",
+        "tfidf"
+      ],
+      "responses": [
+        "TF-IDF (Term Frequency - Inverse Document Frequency) scores how important a word is to a text compared with a whole collection. Common words get low weights and distinctive words get high weights, which makes it great for matching sentences."
+      ]
+    },
+    {
+      "tag": "cosine",
+      "patterns": [
+        "what is cosine similarity",
+        "explain cosine similarity",
+        "how do you compare sentences",
+        "how do you match my message",
+        "cosine similarity meaning",
+        "how does similarity work",
+        "cosine",
+        "cosine similarity"
+      ],
+      "responses": [
+        "Cosine similarity measures the angle between two vectors. A score of 1 means the sentences point in the same direction (very similar) and 0 means they share nothing. I use it to compare your message with my known patterns."
+      ]
+    },
+    {
+      "tag": "how_it_works",
+      "patterns": [
+        "how do you work",
+        "how does this chatbot work",
+        "how do you understand me",
+        "how were you built",
+        "how do you work internally",
+        "explain how you work",
+        "how does this bot work",
+        "what technology do you use",
+        "what are you made of",
+        "how it works"
+      ],
+      "responses": [
+        "I clean your text (lowercase, tokenize, remove stop words, stem), turn it into a TF-IDF vector, and compare it with all my example patterns using cosine similarity. The best match above a threshold decides my reply."
+      ]
+    },
+    {
+      "tag": "flask",
+      "patterns": [
+        "what is flask",
+        "explain flask",
+        "tell me about flask",
+        "flask framework",
+        "what does flask do",
+        "what is a flask app",
+        "flask"
+      ],
+      "responses": [
+        "Flask is a lightweight Python web framework. It serves this chat page and the /chat endpoint that sends your messages to me."
+      ]
+    },
+    {
+      "tag": "python",
+      "patterns": [
+        "what is python",
+        "explain python",
+        "tell me about python",
+        "why python",
+        "python programming language",
+        "is python good",
+        "what is python used for",
+        "python"
+      ],
+      "responses": [
+        "Python is a popular, easy-to-read programming language used for web development, data science, automation and AI."
+      ]
+    },
+    {
+      "tag": "machine_learning",
+      "patterns": [
+        "what is machine learning",
+        "explain machine learning",
+        "tell me about machine learning",
+        "define machine learning",
+        "what is ml",
+        "machine learning meaning",
+        "machine learning",
+        "ml"
+      ],
+      "responses": [
+        "Machine learning is a way of building software that learns patterns from data instead of following only hand-written rules."
+      ]
+    },
+    {
+      "tag": "ai",
+      "patterns": [
+        "what is ai",
+        "what is artificial intelligence",
+        "explain artificial intelligence",
+        "tell me about ai",
+        "define artificial intelligence",
+        "ai meaning",
+        "ai",
+        "artificial intelligence"
+      ],
+      "responses": [
+        "Artificial Intelligence is the field of building systems that perform tasks that normally need human intelligence, such as understanding language, recognising images and making decisions."
+      ]
+    },
+    {
+      "tag": "chatbot",
+      "patterns": [
+        "what is a chatbot",
+        "explain chatbot",
+        "tell me about chatbots",
+        "define chatbot",
+        "what does a chatbot do",
+        "chatbot meaning",
+        "chatbot",
+        "chatbots"
+      ],
+      "responses": [
+        "A chatbot is a program that holds a conversation with people through text or voice. Simple ones, like me, match your message to known intents; advanced ones use large language models."
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "how old are you",
+        "what is your age",
+        "when were you born",
+        "when were you created",
+        "your age",
+        "are you old",
+        "age"
+      ],
+      "responses": [
+        "I don't have a birthday, but I get re-born every time the server starts!",
+        "Age is just a number, and mine is zero-point-something."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "what is the weather",
+        "what's the weather like",
+        "is it raining",
+        "how is the weather today",
+        "weather forecast",
+        "will it rain today",
+        "is it sunny",
+        "what is the temperature",
+        "weather"
+      ],
+      "responses": [
+        "I can't look up live weather, since I have no internet access. A weather app or website will do much better!"
+      ]
+    },
+    {
+      "tag": "love",
+      "patterns": [
+        "do you love me",
+        "I love you",
+        "are you my friend",
+        "will you be my friend",
+        "do you like me",
+        "I like you"
+      ],
+      "responses": [
+        "That's sweet! I'm a chatbot, but I'm always happy to chat with you.",
+        "Aww, thanks! You're a great conversation partner."
+      ]
+    },
+    {
+      "tag": "human",
+      "patterns": [
+        "are you a robot",
+        "are you human",
+        "are you real",
+        "are you a bot",
+        "are you a person",
+        "are you alive",
+        "are you an AI",
+        "human"
+      ],
+      "responses": [
+        "I'm a chatbot, a program running on your computer. Not human, but friendly!"
+      ]
+    }
+  ],
+  "fallback": [
+    "Sorry, I didn't quite get that. Try asking about NLP, jokes, or the time.",
+    "Hmm, I'm not sure how to answer that. Could you rephrase it?",
+    "I'm a simple bot and don't know that one yet. Type \"help\" to see what I can do."
+  ]
+}
